@@ -4,7 +4,7 @@ from OMPify.model import OMPify
 from transformers import GPTNeoXForCausalLM, GPT2Tokenizer
 
 
-class CompAI:
+class OMPAR:
 
     def __init__(self, model_path, device, args):
         self.device = device
@@ -82,7 +82,7 @@ if __name__=='__main__':
             }"""
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    compai = CompAI(model_path=main_args.model_weights, device=device, args=main_args)
+    ompar = OMPAR(model_path=main_args.model_weights, device=device, args=main_args)
 
-    pragma = compai.auto_comp(code)
+    pragma = ompar.auto_comp(code)
     print(pragma)
