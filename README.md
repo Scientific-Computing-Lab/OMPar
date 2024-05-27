@@ -1,6 +1,6 @@
 # OMPAR
 
-OMPAR is a compiler-oriented tool composed of the following pipeline: it uses (OMPify)[https://github.com/Scientific-Computing-Lab-NRCN/OMPify] to detect parallelization opportunities. When a for loop that would benefit from parallelization is found, (MonoCoder)[https://github.com/Scientific-Computing-Lab-NRCN/MonoCoder] is applied to generate the OpenMP pragma.
+OMPAR is a compiler-oriented tool composed of the following pipeline: it uses [OMPify](https://github.com/Scientific-Computing-Lab-NRCN/OMPify) to detect parallelization opportunities. When a for loop that would benefit from parallelization is found, [MonoCoder](https://github.com/Scientific-Computing-Lab-NRCN/MonoCoder) is applied to generate the OpenMP pragma.
 
 ## Usage
 Here is an example of how to use OMPAR:
