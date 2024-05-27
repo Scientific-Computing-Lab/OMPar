@@ -71,17 +71,18 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.register('type', 'bool', lambda v: v.lower() in ['yes', 'true', 't', '1', 'y'])
 
-    parser.add_argument('--vocab_file', default='../MonoCoder/tokenizer/gpt/gpt_vocab/gpt2-vocab.json')
-    parser.add_argument('--merge_file', default='../MonoCoder/tokenizer/gpt/gpt_vocab/gpt2-merges.txt')
+    parser.add_argument('--vocab_file', default='tokenizer/gpt/gpt_vocab/gpt2-vocab.json')
+    parser.add_argument('--merge_file', default='tokenizer/gpt/gpt_vocab/gpt2-merges.txt')
+    parser.add_argument('--model_weights', help='Path to the OMPify model weights', required=True)
 
     main_args = parser.parse_args()
 
-    code = """for(int i = 1; i <= 4; i++){
+    code = """for(int i = 0; i <= 1000; i++){
                 partial_Sum += i;
             }"""
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    compai = CompAI(model_path='/mnt/lbosm1/home/Share/MonoCoder/CompAI/OMPify/saved_models/checkpoint-best-f1', device=device, args=main_args)
+    compai = CompAI(model_path=main_args.model_weights, device=device, args=main_args)
 
     pragma = compai.auto_comp(code)
     print(pragma)
