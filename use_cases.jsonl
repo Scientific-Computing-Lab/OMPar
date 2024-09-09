@@ -1,0 +1,7 @@
+{"code": "for (int i = 0; i < size; i++) {\n    array[i] = compute(array[i]);\n}", "label": true, "pragma": "#pragma omp parallel for"}
+{"code": "for (int i = 0; i < size; i++) {\n    result[i] = array1[i] + array2[i];\n}", "label": true, "pragma": "#pragma omp parallel for"}
+{"code": "for (int i = 0; i < size; i++) {\n    sum += array[i];\n}", "label": true, "pragma": "#pragma omp parallel for reduction(+:sum)"}
+{"code": "for (int i = 0; i < size; i++) {\n    matrix[i][i] = value;\n}", "label": true, "pragma": "#pragma omp parallel for"}
+{"code": "for (int i = 0; i < size; i++) {\n    temp[i] = array[i] * factor;\n}", "label": true, "pragma": "#pragma omp parallel for"}
+{"code": "for (int i = 0; i < size; i++) {\n    if (array[i] < 0) {\n        return i;\n    }\n}", "label": false, "pragma": ""}
+{"code": "for (int i = 0; i < size; i++) {\n    array[i] = array[i - 1] + array[i + 1];\n}", "label": false, "pragma": ""}

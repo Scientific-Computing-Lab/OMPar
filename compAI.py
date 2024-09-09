@@ -65,24 +65,3 @@ class OMPAR:
         """
         if self.cls_par(loop):
             return self.pragma_format(self.gen_par(loop))
-
-
-if __name__=='__main__':
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.register('type', 'bool', lambda v: v.lower() in ['yes', 'true', 't', '1', 'y'])
-
-    parser.add_argument('--vocab_file', default='tokenizer/gpt/gpt_vocab/gpt2-vocab.json')
-    parser.add_argument('--merge_file', default='tokenizer/gpt/gpt_vocab/gpt2-merges.txt')
-    parser.add_argument('--model_weights', help='Path to the OMPify model weights', required=True)
-
-    main_args = parser.parse_args()
-
-    code = """for(int i = 0; i <= 1000; i++){
-                partial_Sum += i;
-            }"""
-
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    ompar = OMPAR(model_path=main_args.model_weights, device=device, args=main_args)
-
-    pragma = ompar.auto_comp(code)
-    print(pragma)
