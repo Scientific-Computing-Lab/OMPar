@@ -6,6 +6,10 @@ OMPAR is a compiler-oriented tool designed to identify and generate parallelizat
   2. [MonoCoder](https://github.com/Scientific-Computing-Lab-NRCN/MonoCoder): Generates the appropriate OpenMP pragmas when a for loop is identified as beneficial for parallelization.
 Note: The weights for OMPify are not included in the repository and will be provided upon request.
 
+![OMPAR Workflow](./OMPar.jpg)
+
+*Figure 1: OMPar workflow using a simple pi code example, comparing it with other compilers. Source-to-source automatic compilers (such as AutoPar) generate the necessary pragma, while HPC compilers (such as ICPC) generate a binary parallel output. In contrast, OMPar relies on two LLMs: one for classifying parallelization needs (OMPify) and one for generating the full pragma (MonoCoder-OMP). Both were trained on a large corpus of codes. The evaluation checks if the code compiles, performs with increasing threads, and verifies outputs.*
+
 ## Building OMPAR
 To build OMPAR, ensure that CUDA 12.1 is supported on your system. Follow these steps:
 
