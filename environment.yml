@@ -151,4 +151,4 @@ dependencies:
   - zstd=1.5.5
   - pip:
       - tree-sitter==0.20.4
-prefix: /home/k.tal/miniconda3/envs/ompar_env
+prefix: /home/user/miniconda3/envs/ompar_env
