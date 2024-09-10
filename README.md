@@ -32,6 +32,9 @@ cd parser
 ```
 
 ## Usage
+
+To use OMPar, you need to download the Ompify model weights from [here](https://drive.google.com/drive/folders/1tnJf9YvjpDLktVi23TkW-rpjqfdZoybf?usp=sharing).
+
 Here’s an example of how to use OMPAR:
 
 ```python
@@ -48,5 +51,5 @@ pragma = ompar.auto_comp(code)
 To run additional use cases, execute the following command:
 
 ```bash
-python run_ompar.py --model_weights /home/k.tal/OMPify
+python run_ompar.py --model_weights /path/to/OMPify
 ```
