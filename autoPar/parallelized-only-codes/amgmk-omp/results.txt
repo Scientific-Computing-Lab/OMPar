@@ -1,0 +1,1 @@
+amgmk-omp: Success
