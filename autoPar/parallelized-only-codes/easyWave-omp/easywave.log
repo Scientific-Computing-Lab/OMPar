@@ -1,0 +1,76 @@
+ =============  Starting new log at Wed Mar 27 13:01:20 2024
+Command line:  -grid ./data/grids/e2Asean.grd -source ./data/faults/BengkuluSept2007.flt -time 120
+Loading bathymetry from ./data/grids/e2Asean.grd
+Stable CFL time step: 8.34961 sec
+Read source from ./data/faults/BengkuluSept2007.flt
+
+Model parameters for this simulation:
+timestep: 5 sec
+max time: 120 min
+poi_dt_out: 30 sec
+poi_report: no
+poi_search_dist: 10 km
+poi_min_depth: 1 m
+poi_max_depth: 10000 m
+min_depth: 10 m
+ssh0_rel: 0.01
+ssh0_abs: 0 m
+ssh_arrival: 0.001 m
+ssh_clip: 0.0001 m
+ssh_zero: 1e-05 m
+ssh_transparency: 0 m
+
+Starting main loop...
+Model time = 00:00:00,   elapsed: 0 msec
+Model time = 00:10:00,   elapsed: 21 msec
+Model time = 00:20:00,   elapsed: 42 msec
+Model time = 00:30:00,   elapsed: 76 msec
+Model time = 00:40:00,   elapsed: 124 msec
+Model time = 00:50:00,   elapsed: 197 msec
+Model time = 01:00:00,   elapsed: 299 msec
+Model time = 01:10:00,   elapsed: 433 msec
+Model time = 01:20:00,   elapsed: 604 msec
+Model time = 01:30:00,   elapsed: 819 msec
+Model time = 01:40:00,   elapsed: 1085 msec
+Model time = 01:50:00,   elapsed: 1410 msec
+Model time = 02:00:00,   elapsed: 1805 msec
+Finishing main loop
+Final dump...
+ =============  Starting new log at Fri Mar 29 00:18:06 2024
+Command line:  -grid ./data/grids/e2Asean.grd -source ./data/faults/BengkuluSept2007.flt -time 120
+Loading bathymetry from ./data/grids/e2Asean.grd
+Stable CFL time step: 8.34961 sec
+Read source from ./data/faults/BengkuluSept2007.flt
+
+Model parameters for this simulation:
+timestep: 5 sec
+max time: 120 min
+poi_dt_out: 30 sec
+poi_report: no
+poi_search_dist: 10 km
+poi_min_depth: 1 m
+poi_max_depth: 10000 m
+min_depth: 10 m
+ssh0_rel: 0.01
+ssh0_abs: 0 m
+ssh_arrival: 0.001 m
+ssh_clip: 0.0001 m
+ssh_zero: 1e-05 m
+ssh_transparency: 0 m
+
+Starting main loop...
+Model time = 00:00:00,   elapsed: 0 msec
+Model time = 00:10:00,   elapsed: 13 msec
+Model time = 00:20:00,   elapsed: 40 msec
+Model time = 00:30:00,   elapsed: 83 msec
+Model time = 00:40:00,   elapsed: 149 msec
+Model time = 00:50:00,   elapsed: 250 msec
+Model time = 01:00:00,   elapsed: 394 msec
+Model time = 01:10:00,   elapsed: 588 msec
+Model time = 01:20:00,   elapsed: 837 msec
+Model time = 01:30:00,   elapsed: 1154 msec
+Model time = 01:40:00,   elapsed: 1563 msec
+Model time = 01:50:00,   elapsed: 2108 msec
+Model time = 02:00:00,   elapsed: 2799 msec
+Finishing main loop
+Final dump...
