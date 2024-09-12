@@ -1,4 +1,4 @@
-The following "42" benchmarks successfully passed the compile and run tests and were then subjected to scalability evaluation.
+The following 42 benchmarks successfully passed the compile and run tests and were then subjected to scalability evaluation.
 
 accuracy-omp
 amgmk-omp
@@ -42,4 +42,3 @@ simplemoc-omp
 tensorT-omp
 wlcpow-omp
 zmddft-omp
-
