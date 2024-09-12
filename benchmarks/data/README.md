@@ -17,6 +17,11 @@ Clone the HeCBench repository and run the dataset creation script:
 
 ```bash
 git clone https://github.com/zjin-lcf/HeCBench
+
+cd vendor
+chmod +x build.sh; ./build.sh
+
+cd ..
 python create_dataset.py
 ```
 
