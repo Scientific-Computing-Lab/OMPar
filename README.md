@@ -62,13 +62,11 @@ OMPar accurately predicted the pragma in 74% of the test loop.
 
 | Test setup                                      | TP  | FP  | TN  | FN  | Precision | Recall | Accuracy |
 |-------------------------------------------------|-----|-----|-----|-----|-----------|--------|----------|
-| OMPar accuracy with ground-truth label          | 311 | 127 | 262 | 70  | 71%       | 81%    | 74%      |
+| OMPar accuracy with ground-truth label          | 311 | 127 | 262 | 70  | 71%       | 81%    | **74%**      |
 | AutoPar accuracy with ground-truth label        | 63  | 25  | 365 | 317 | 71%       | 17%    | 56%      |
 | ICPC accuracy with ground-truth label           | 95  | 11  | 285 | 379 | 90%       | 25%    | 62%      |
-|-------------------------------------------------|-----|-----|-----|-----|-----------|--------|----------|
-| OMPar accuracy with compile and run check       | 407 | 31  | 262 | 70  | 92%       | 85%    | 86%      |
+| OMPar accuracy with compile and run check       | 407 | 31  | 262 | 70  | 92%       | 85%    | **86%**      |
 | AutoPar accuracy with compile and run check     | 24  | 25  | 365 | 356 | 49%       | 6%     | 50%      |
 | ICPC accuracy with compile and run check        | 68  | 5   | 312 | 385 | 93%       | 15%    | 49%      |
-|-------------------------------------------------|-----|-----|-----|-----|-----------|--------|----------|
 
 The results for OMPar, AutoPar, and ICPC can be reproduced using the information provided in the `benchmarks` folder.
