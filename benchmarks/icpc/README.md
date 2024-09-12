@@ -1,6 +1,6 @@
 # Automatic Parallelization using Intel Compiler
 
-Intel Compiler (ICC) 19.1.3.304 20200925 is used for performing automatic OpenMP parallelizaiton.
+Intel Compiler (ICC) 19.1.3.304 20200925 is used for performing automatic OpenMP parallelizaiton. It provides a report detailing the loops that have been parallelized and produces binaries optimized for execution in multicore environments.
 
 ## Compile and Run Test
 

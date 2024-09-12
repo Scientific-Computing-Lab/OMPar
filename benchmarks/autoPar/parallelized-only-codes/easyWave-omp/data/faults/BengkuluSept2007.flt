@@ -1,8 +1,0 @@
-; Lorito et al., 2007 Bengkulu Sept 2007 source model
--location 101.737 -4.868 20.8 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 3
--location 101.386 -5.133 10.4 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 2
--location 101.114 -4.774 10.4 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 2
--location 100.843 -4.414 10.4 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 2
--location 100.923 -3.791 20.8 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 10
--location 100.652 -3.431 20.8 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 12
--location 100.381 -3.072 20.8 -refpos MT -strike 323 -dip 12 -rake 105 -size 50 50 -slip 1

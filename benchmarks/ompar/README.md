@@ -1,1 +1,0 @@
-# Automatic Parallelization using OMPar

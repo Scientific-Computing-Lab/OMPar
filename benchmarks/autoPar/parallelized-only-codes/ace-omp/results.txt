@@ -1,2 +1,0 @@
-ace-omp: Success
-ace-omp: Success
