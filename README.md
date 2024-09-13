@@ -69,4 +69,4 @@ OMPar accurately predicted the pragma in 74% of the test loop.
 | AutoPar accuracy with compile and run check     | 24  | 25  | 365 | 356 | 49%       | 6%     | 50%      |
 | ICPC accuracy with compile and run check        | 68  | 5   | 312 | 385 | 93%       | 15%    | 49%      |
 
-The results for OMPar, AutoPar, and ICPC can be reproduced using the information provided in the `benchmarks` folder.
+The results for OMPar, AutoPar, and ICPC can be reproduced using the information provided in the `evaluation` folder. Specifically, the `data` subfolder contains the code to gather the HeCBench serial codes, while the `icpc`, `autoPar`, and `ompar` subfolders describe the methods for running these codes.
