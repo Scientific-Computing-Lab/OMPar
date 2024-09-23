@@ -10,7 +10,7 @@ Note: The weights for OMPify are not included in the repository and will be prov
 
 *Figure 1: OMPar workflow using a simple pi code example, comparing it with other compilers. Source-to-source automatic compilers (such as AutoPar) generate the necessary pragma, while HPC compilers (such as ICPC) generate a binary parallel output. In contrast, OMPar relies on two LLMs: one for classifying parallelization needs (OMPify) and one for generating the full pragma (MonoCoder-OMP). Both were trained on a large corpus of codes. The evaluation checks if the code compiles, performs with increasing threads, and verifies outputs.*
 
-## Building OMPAR
+## Building OMPar
 To build OMPAR, ensure that CUDA 12.1 is supported on your system. Follow these steps:
 
 Clone the repository:
